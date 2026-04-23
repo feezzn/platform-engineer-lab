@@ -1,0 +1,25 @@
+# Terraform local artifacts
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Sensitive / local overrides
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configs / local files
+.terraformrc
+terraform.rc
+
+# Variable files locais
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Keep the dependency lock file versioned
+!.terraform.lock.hcl                                    
